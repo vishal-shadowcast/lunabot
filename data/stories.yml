@@ -1,0 +1,68 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about_luna
+  - action: utter_about_luna
+  - intent: asking_luna_vision
+  - action: utter_luna_vision
+  - intent: ask_about_avatar
+  - action: utter_avatar_def
+  - intent: mood_great
+  - action: utter_happy
+
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about_luna
+  - action: utter_about_luna
+  - intent: ask_about_avatar
+  - action: utter_avatar_def
+  - intent: asking_luna_vision
+  - action: utter_luna_vision
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: about_luna
+    entities:
+    - LunaOne: LunaOne
+  - action: utter_about_luna
+  - intent: asking_luna_vision
+  - action: utter_luna_vision
+  - intent: ask_about_avatar
+  - action: utter_avatar_def
+  - intent: goodbye
+  - action: utter_goodbye

@@ -1,0 +1,161 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - how are you?
+    - hows you doing
+    - helllo
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - yup
+    - sure
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - affirm
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - not
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thank you
+    - good bye
+- intent: out_of_scope
+  examples: |
+    - blablablablalblab
+    - asdasdasdasd
+    - hmmmmmm
+    - hahahha
+    - ..
+    - where are you
+    - what are you
+    - what else can you do
+    - whats the weather update
+    - im sleeping
+    - what are you?
+    - who made you?
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: about_luna
+  examples: |
+    - what is [lunaone](LunaOne)
+    - what is [luna](LunaOne)
+    - why [luna](LunaOne)
+    - what is special about [luna](LunaOne)
+    - what made [luna](LunaOne) so special
+    - what is [luna](LunaOne) all about
+    - why to play [luna](LunaOne) instead of other games
+    - good places to visit in [luna](LunaOne)
+    - where is the room in [luna](LunaOne)
+    - where is the elevator in [luna](LunaOne)
+    - where can i make friends [luna](LunaOne)
+    - what is [lunaone]{"entity": "LunaOne", "value": "LunaOne"}
+    - what is [luna]{"entity": "LunaOne", "value": "LunaOne"}
+- intent: asking_luna_vision
+  examples: |
+    - your vision
+    - how can you describe your vision?
+    - vision
+    - your company vision
+    - express your vision
+    - what is your vision?
+    - What is the LunaOne vision?
+    - what is the [luna](LunaOne) vision?
+    - what vision do you have?
+    - do you have any vision?
+    - what are you thinking for the future?
+    - what do you want to achieve?
+    - what achievements do you want with luna?
+    - where do you see yourself in future?
+    - what is your vision
+- intent: ask_about_avatar
+  examples: |
+    - avatar
+    - what is avatar?
+    - how can you describe an avatar?
+    - how can i use avatar?
+    - how to access avatar?
+    - how to interact with avatar?
+    - please describe avatar?
+    - what is avatar in [luna]{"entity": "LunaOne", "value": "LunaOne"}
+    - what is this avatar
+- synonym: LunaOne
+  examples: |
+    - lunaone
+    - luna
+    - LunaOne
+    - Luna
+    - Luna One
+    - Lunaa
+    - Lunaone
+- regex: LunaOne
+  examples: |
+    - \bluna\b

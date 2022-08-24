@@ -1,0 +1,6 @@
+[
+  {
+    "name": "LunaOne",
+    "pattern": "\\bluna\\b"
+  }
+]

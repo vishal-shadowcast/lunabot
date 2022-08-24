@@ -1,0 +1,47 @@
+version: '3.1'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- about_luna
+- affirm
+- ask_about_avatar
+- asking_luna_vision
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- out_of_scope
+responses:
+  utter_greet:
+  - text: hi there! Welcome to LunaOne!!! how can i help you?
+  - text: Welcome to LunaOne!!! Hope you are enjoying here. how can I help you?
+  utter_about_luna:
+  - text: LunaOne is a metaverse based project. For futher details please visit official luna website.
+  - text: LUNAONE is the first platform that combines various types of meta activities in a single virtual world with a connection to real-world activities.
+  - text: LUNAONE is the only virtual place that allows earning, studying, and gaming in a seamless Web 3.0 environment.
+  utter_luna_vision:
+  - text: The main mission of the LunaOne project is to create not just a gaming universe, but to lay the foundation for a global meta infrastructure with the ability to earn, study, play, and attend events without the need to leave home.
+  utter_avatar_def:
+  - text: Avatar is a primary tool to create a symbiosis between virtual and real. At the start, a person creates an avatar, which uniqueness is confirmed by the NFT.
+    image: http://127.0.0.1:5000/assets/avatar.png
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: did that help?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Nice talk to you! Enjoy your onboarding...
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+entities:
+- LunaOne
+actions:
+- utter_about_luna
+- utter_avatar_def
+- utter_goodbye
+- utter_greet
+- utter_luna_vision
+- action_blenderbot_reply
